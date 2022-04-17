@@ -135,8 +135,8 @@ def run(data):
         connection = create_db_connection(HOST, USER, PASSWORD, DATABASE)
         execute_query(connection, data[i]["table"])
         insert_data(data[i]["value"], HOST, USER, PASSWORD, DATABASE, table=i)
-        
-    
+
+
 if __name__ == "__main__":
     run(data)
     print("---------------------Insert All Data Done-------------------")
